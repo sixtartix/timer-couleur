@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Circulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="dial">
+            <svg class="progress-ring" width="300" height="300">
+                <circle class="progress-ring__circle" stroke="green" stroke-width="20" fill="transparent" r="130" cx="150" cy="150"/>
+            </svg>
+            <div class="timer-display">
+                <span id="timer-text">00:00:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="hours-input" placeholder="Heures" min="0" max="99">
+            <input type="number" id="minutes-input" placeholder="Minutes" min="0" max="59">
+            <input type="number" id="seconds-input" placeholder="Secondes" min="0" max="59">
+            <button id="start-stop-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
